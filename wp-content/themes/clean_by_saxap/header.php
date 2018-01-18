@@ -18,6 +18,7 @@
 <link rel="alternate" type="application/rss+xml" title="Comments RSS" href="<?php bloginfo('comments_rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
  <!--[if lt IE 9]>
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <![endif]-->
@@ -39,9 +40,9 @@
 </head>
 <body <?php body_class(); ?>>
 <header>
-<div id="header" class="site">
-<nav id="site-navigation" class="navigation" role="navigation">
-    <div class="menu1">
+<div id="header" class="site" >
+<nav id="site-navigation" class="navigation nav" role="navigation">
+    
 	<?php 
 	     wp_nav_menu(array(
 		'theme_location'=> 'top',
@@ -53,24 +54,8 @@
       
 	?>
 
- <ul class="testmenu">
- 	<li><a href="#">Our busines</a>
-        <ul class="menu">
-        	<li><a href="">First submenu</a></li>
-        	<li><a href="">Second submenu</a></li>
-        	<li><a href="">Third submenu</a></li>
-        </ul>
- 	</li>
- 	<li><a href="#">About</a>
-        <ul class="menu">
-        	<li><a href="">Our company</a></li>
-        	<li><a href="">What we do</a></li>
-        	<li><a href="">Our team</a></li>
-        </ul>
- 	</li>
- 	<li><a href="#">Contact Us</a></li>
- </ul>  
- </div>
+ 
+ 
 
 </nav>
 </div>
